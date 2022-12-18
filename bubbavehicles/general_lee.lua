@@ -15,7 +15,7 @@ minetest.register_entity("bubbavehicles:general_lee", {
 		vehicles.object_detach(self, clicker, {x=1, y=0, z=1})
 		elseif not self.driver then
 		vehicles.object_attach(self, clicker, {x=0, y=5, z=4}, false, {x=0, y=2, z=4})
-		minetest.sound_play("engine_start", 
+		minetest.sound_play("general_lee_engine", 
 		{to_player=self.driver:get_player_name(), gain = 4, max_hear_distance = 3, loop = false})
 		self.sound_ready = false
 		minetest.after(14, function()
