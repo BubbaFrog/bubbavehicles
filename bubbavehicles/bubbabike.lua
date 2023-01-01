@@ -6,7 +6,7 @@ minetest.register_entity("bubbavehicles:bubbabike", {
 	textures = {"bubbavehicles_frogcycle.png"},
 	velocity = 15,
 	acceleration = -5,
-	stepheight = step,
+	stepheight = 1.5,
 	hp_max = 200,
 	physical = true,
 	collisionbox = {-1, 0, -1, 1.3, 1, 1},
